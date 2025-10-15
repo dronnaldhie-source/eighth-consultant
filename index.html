@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eighth Consultant — Retail System & POS Consultant</title>
+  <style>
+    :root{
+      --blue:#0b74d1;    /* primary */
+      --orange:#ff9f1c;  /* accent */
+      --green:#2ecc71;
+      --coral:#ff5c5c;
+      --muted:#f6f7fb;
+      --dark:#0f1724;
+      --glass: rgba(255,255,255,0.95);
+      --radius:14px;
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{margin:0; background:linear-gradient(180deg,#ffffff 0%, #fbfdff 100%); color:var(--dark); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+    .container{max-width:var(--maxw); margin:28px auto; padding:18px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand h1{font-size:22px;margin:0; letter-spacing:0.6px}
+    .brand .slogan{font-size:13px;color:#475569;margin-top:4px}
+    nav{display:flex; gap:12px; align-items:center}
+    nav a{color:var(--dark); text-decoration:none; font-weight:700}
+    .btn-contact{background:var(--orange); color:white; padding:8px 12px; border-radius:10px; text-decoration:none; font-weight:800}
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 360px; gap:18px; align-items:center; margin-top:18px}
+    .card{background:var(--glass); padding:22px; border-radius:var(--radius); box-shadow:0 6px 24px rgba(10,20,40,0.06)}
+    .hero h2{font-size:26px;color:var(--blue); margin:0 0 8px}
+    .sub{color:#334155}
+    /* About / Services Grid */
+    .grid2{display:grid; grid-template-columns: 1fr 1fr; gap:18px; margin-top:18px}
+    .avatar{width:86px;height:86px;border-radius:12px; overflow:hidden; display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--orange),var(--coral)); color:white; font-weight:800}
+    h3{margin:0 0 8px}
+    ul{padding-left:18px}
+    li{margin:8px 0}
+    /* Experience + Contact */
+    .two-col{display:grid; grid-template-columns:1fr 340px; gap:18px; margin-top:18px}
+    .contact-box{background:linear-gradient(135deg,var(--coral),#ff7a66); color:white; padding:18px; border-radius:12px}
+    .small{font-size:13px; color:rgba(255,255,255,0.9)}
+    footer{margin-top:28px; text-align:center; color:#475569; font-size:13px; padding:18px 0}
+    /* portfolio list */
+    .portfolio-item{display:flex;gap:18px;align-items:flex-start;background:white;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(12,40,80,0.04);}
+    .portfolio-illustration{width:240px;flex-shrink:0;border-radius:10px;overflow:hidden}
+    .portfolio-content{flex:1}
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr; text-align:left}
+      .grid2{grid-template-columns:1fr}
+      .two-col{grid-template-columns:1fr}
+      nav{display:none}
+      .portfolio-item{flex-direction:column}
+      .portfolio-illustration{width:100%}
+    }
+    .logo-svg{width:56px;height:56px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(11,116,209,0.1); color:var(--blue); font-weight:700}
+    .section-title{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <!-- Inline SVG logo (bold startup style) -->
+        <svg class="logo-svg" viewBox="0 0 200 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eighth Consultant logo">
+          <defs>
+            <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+              <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0b74d1" flood-opacity="0.15"/>
+            </filter>
+          </defs>
+          <!-- bold 8, four colored segments -->
+          <g filter="url(#shadow)">
+            <path d="M100 10 A60 60 0 0 1 160 70 L128 98 A34 34 0 0 0 100 40 Z" fill="#0b74d1"/>
+            <path d="M160 70 A60 60 0 0 1 100 130 L100 40 A34 34 0 0 0 128 98 Z" fill="#ff9f1c"/>
+            <path d="M100 190 A60 60 0 0 1 160 250 L128 222 A34 34 0 0 0 100 260 Z" fill="#2ecc71"/>
+            <path d="M40 250 A60 60 0 0 1 100 190 L100 260 A34 34 0 0 0 72 222 Z" fill="#ff5c5c"/>
+            <circle cx="100" cy="70" r="60" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>
+            <circle cx="100" cy="250" r="60" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>
+          </g>
+        </svg>
+
+        <div>
+          <h1>Eighth Consultant</h1>
+          <div class="slogan">Smart Retail System Consultant</div>
+          <div style="font-size:13px;color:#334155;margin-top:6px">Retail System & POS Consultant</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact" class="btn-contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="card">
+        <div class="section-title">
+          <h2>We help retailers grow with smart systems</h2>
+          <span class="pill">EN / ID</span>
+        </div>
+        <p class="sub">
+          Eighth Consultant helps retail businesses grow through smart system solutions.
+          Based in Bekasi, West Java, we provide consulting services for retailers who want to improve operations
+          using POS systems, ERP software, and other business applications.
+        </p>
+
+        <div style="margin-top:14px; display:flex;gap:10px; flex-wrap:wrap">
+          <a href="#services" class="btn-contact" style="background:var(--blue)">Our Services</a>
+          <a href="#contact" class="btn-contact" style="background:var(--green)">Free Consultation</a>
+          <span style="align-self:center; color:#475569; font-size:13px">Phone: <strong>0818-0857-1212</strong></span>
+        </div>
+      </div>
+
+      <div class="card" style="background:linear-gradient(135deg,var(--blue),#5fb4ff); color:white;">
+        <div style="font-weight:800; font-size:18px">New Client</div>
+        <div style="margin-top:12px; font-size:14px">
+          Since its establishment, Eighth Consultant has successfully assisted a micro business (UMKM)
+          in fresh-chicken retail with several outlets across different regions.
+        </div>
+        <div style="margin-top:12px; font-size:13px; opacity:0.95">Client: UMKM — Penjualan Ayam Potong (multi-outlet)</div>
+      </div>
+    </section>
+
+    <!-- About + Services -->
+    <section class="grid2" id="about">
+      <div class="card">
+        <div style="display:flex;gap:12px;align-items:flex-start">
+          <div class="avatar">A</div>
+          <div>
+            <h3>About / Tentang Kami</h3>
+            <p style="margin:6px 0 0; color:#334155">
+              Hi, I’m <strong>Aldhie</strong>, founder of <strong>Eighth Consultant</strong>.
+              After more than 14 years of experience in ERP software and retail technology, I started this company in 2025
+              to help retailers choose and manage the right systems for their business.
+            </p>
+            <p style="margin-top:10px; font-size:14px; color:#475569">
+              Hai, saya <strong>Aldhie</strong>, pendiri <strong>Eighth Consultant</strong>. Setelah lebih dari 14 tahun
+              berpengalaman di bidang perangkat lunak ERP dan teknologi ritel, saya mendirikan perusahaan ini pada tahun 2025
+              untuk membantu pelaku ritel memilih dan mengelola sistem yang tepat bagi bisnis mereka.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="services">
+        <div class="section-title"><h3>Services / Layanan</h3></div>
+        <p style="color:#334155">We serve UMKM, SMB, and mid-sized businesses that want to digitize and simplify their retail operations.</p>
+        <ul>
+          <li><strong>POS System Consultation</strong> — Selection, setup, and staff training. <br><small style="color:#6b7280">Konsultasi sistem POS, pemasangan & pelatihan staf.</small></li>
+          <li><strong>ERP Software Setup & Optimization</strong> — Integrate sales, inventory, and accounting. <br><small style="color:#6b7280">Pemasangan & optimalisasi ERP.</small></li>
+          <li><strong>Retail System Integration</strong> — Connect POS, e-commerce, and back-office systems. <br><small style="color:#6b7280">Integrasi sistem POS, toko online, back-office.</small></li>
+          <li><strong>Business Process Consultation</strong> — Improve workflows and data accuracy. <br><small style="color:#6b7280">Konsultasi proses bisnis.</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience + Portfolio + Contact -->
+    <section class="two-col" id="experience">
+      <div>
+        <div class="card">
+          <div class="section-title"><h3>Experience / Pengalaman</h3></div>
+          <p style="color:#334155">
+            Since its establishment, Eighth Consultant has successfully assisted various small businesses in implementing efficient retail systems.
+            Currently, we are working with a micro business (UMKM) specializing in fresh chicken retail, which operates several outlets across different regions.
+          </p>
+          <p style="margin-top:12px; color:#475569"><strong>Sejak berdiri</strong>, Eighth Consultant telah berhasil membantu berbagai usaha kecil dalam menerapkan sistem ritel yang efisien. Saat ini kami
+          telah memiliki klien berupa <em>UMKM penjualan ayam potong</em> dengan beberapa outlet di berbagai daerah.</p>
+
+          <div style="margin-top:14px; display:flex;gap:8px; flex-wrap:wrap">
+            <div style="background:linear-gradient(90deg,var(--orange),var(--coral)); color:white; padding:10px 12px; border-radius:10px; font-weight:700">Trusted</div>
+            <div style="background:linear-gradient(90deg,var(--green),#10b981); color:white; padding:10px 12px; border-radius:10px; font-weight:700">Hands-on</div>
+            <div style="background:linear-gradient(90deg,var(--blue),#4fb3ff); color:white; padding:10px 12px; border-radius:10px; font-weight:700">Practical</div>
+          </div>
+        </div>
+
+        <!-- Portfolio (List style) -->
+        <div style="margin-top:18px">
+          <div class="section-title"><h3 id="portfolio">Portfolio</h3></div>
+
+          <div class="portfolio-item">
+            <div class="portfolio-illustration">
+              <!-- simple illustrative SVG for chicken shop -->
+              <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;background:linear-gradient(180deg,#ffffff,#f7fdff);">
+                <rect x="0" y="0" width="600" height="420" fill="#ffffff" />
+                <g transform="translate(20,20)">
+                  <rect x="0" y="60" width="560" height="300" rx="12" fill="#eaf8ff" stroke="#d0eefc" />
+                  <rect x="28" y="84" width="504" height="72" rx="8" fill="#ffd9c4" />
+                  <text x="260" y="132" font-family="Arial" font-size="28" font-weight="700" text-anchor="middle" fill="#ff6b4d">YAMCHIK</text>
+                  <rect x="44" y="168" width="140" height="120" rx="8" fill="#ffffff" stroke="#cfefff" />
+                  <rect x="200" y="168" width="300" height="120" rx="8" fill="#ffffff" stroke="#cfefff" />
+                  <g transform="translate(66,204)">
+                    <circle cx="34" cy="28" r="18" fill="#ffebe6" stroke="#ffd7c7" />
+                    <rect x="80" y="4" width="100" height="40" rx="6" fill="#fff1f0" stroke="#ffd7c7" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+
+            <div class="portfolio-content">
+              <h4 style="margin:0 0 6px">YAMCHIK — Fresh Chicken Retail (Multi-outlet Micro Business)</h4>
+              <p style="margin:0 0 8px; color:#475569">Client project: POS system setup, inventory & reporting system implementation, and staff training across several outlets. The goal was to centralize sales data, reduce stock discrepancies, and enable faster checkout for customers.</p>
+              <ul>
+                <li>POS system setup & configuration</li>
+                <li>Inventory management & reporting implementation</li>
+                <li>Staff training and SOP for daily operations</li>
+                <li>Result: faster checkout, improved stock accuracy, consolidated reports for owner</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <aside class="contact-box">
+        <h3 style="margin:0 0 6px">Contact / Hubungi Kami</h3>
+        <p class="small">Let's talk about how we can help your business grow — Mari berdiskusi bagaimana kami dapat membantu bisnis Anda.</p>
+        <div style="margin-top:12px; font-weight:700">📍 Bekasi, West Java, Indonesia</div>
+        <div style="margin-top:8px; font-weight:700">📧 aldhie@outlook.co.id</div>
+        <div style="margin-top:8px; font-weight:700">📱 0818-0857-1212 (WhatsApp)</div>
+
+        <div style="margin-top:16px;">
+          <a href="mailto:aldhie@outlook.co.id" style="display:inline-block;padding:10px 12px;border-radius:10px;background:white;color:var(--coral);font-weight:800;text-decoration:none">Email Now</a>
+        </div>
+
+        <div style="margin-top:18px; font-size:13px; opacity:0.95">
+          <strong>Free consultation:</strong> 30 minutes virtual or in-person (Bekasi) — <em>subject to availability</em>.
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      © <strong>2025 Eighth Consultant</strong> — Retail System & POS Consultant • Bekasi • aldhie@outlook.co.id
+    </footer>
+  </div>
+</body>
+</html>

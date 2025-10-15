@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eighth Consultant logo">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0b74d1" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M100 10 A60 60 0 0 1 160 70 L128 98 A34 34 0 0 0 100 40 Z" fill="#0b74d1"/>
+    <path d="M160 70 A60 60 0 0 1 100 130 L100 40 A34 34 0 0 0 128 98 Z" fill="#ff9f1c"/>
+    <path d="M100 190 A60 60 0 0 1 160 250 L128 222 A34 34 0 0 0 100 260 Z" fill="#2ecc71"/>
+    <path d="M40 250 A60 60 0 0 1 100 190 L100 260 A34 34 0 0 0 72 222 Z" fill="#ff5c5c"/>
+    <circle cx="100" cy="70" r="60" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>
+    <circle cx="100" cy="250" r="60" fill="none" stroke="rgba(0,0,0,0.06)" stroke-width="2"/>
+  </g>
+</svg>
